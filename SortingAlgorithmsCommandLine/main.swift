@@ -27,9 +27,16 @@ let input = readLine()
 var numbers : [Int] = []
 
 // Populate the array
-for _ in 1...10 {
-    numbers.append( random(between: 1, and: 50) )
-}
+//for _ in 1...10 {
+//    numbers.append( random(between: 1, and: 50) )
+//}
+numbers.append(7)
+numbers.append(2)
+numbers.append(4)
+numbers.append(6)
+numbers.append(3)
+numbers.append(5)
+
 
 // Show the user the contents of the array
 print("-----")
