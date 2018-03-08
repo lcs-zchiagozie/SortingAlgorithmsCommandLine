@@ -49,6 +49,20 @@ print("-----")
 // ----------- Write code to sort the array here -----------
 print("Now sorting the array...")
 
+// loop find the highest number
+for i in 1...5 {
+    
+    // compare the current number to the previous number
+    if  numbers[i - 1] > numbers[i] {
+        // swap
+        let temporaryValue = numbers[i]
+        numbers[i] = numbers[i - 1]
+        numbers[i - 1] = temporaryValue
+        
+    }
+}
+
+
 // ----------- Final part of the program, show the sorted list -----------
 print("-----")
 print("The contents of the sorted list:")
