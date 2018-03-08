@@ -27,15 +27,16 @@ let input = readLine()
 var numbers : [Int] = []
 
 // Populate the array
-//for _ in 1...10 {
-//    numbers.append( random(between: 1, and: 50) )
-//}
-numbers.append(7)
-numbers.append(2)
-numbers.append(4)
-numbers.append(6)
-numbers.append(3)
-numbers.append(5)
+for _ in 1...100 {
+    numbers.append( random(between: 1, and: 50) )
+}
+//numbers.append(7)
+//numbers.append(2)
+//numbers.append(4)
+//numbers.append(6)
+//numbers.append(3)
+//numbers.append(5)
+//numbers.append(10)
 
 
 // Show the user the contents of the array
@@ -50,9 +51,9 @@ print("-----")
 print("Now sorting the array...")
 
 // sort the entire array
-for _ in 1...6 {
+for _ in 1...numbers.count {
     // loop find the highest number
-    for i in 1...5 {
+    for i in 1...numbers.count-1 {
         
         // compare the current number to the previous number
         if  numbers[i - 1] > numbers[i] {
